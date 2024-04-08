@@ -1,0 +1,5 @@
+dog+animal+animal that looks like a dog+/Dictionary;component/Resources/Images/dog.jpg
+car+mode of transport+a four-wheeled road vehicle that is powered by an engine and is able to carry a small number of people+/Dictionary;component/Resources/Images/car.jpg
+pineapple+fruit+apple with pine+/Dictionary;component/Resources/Images/pineapple.jpg
+orange+fruit+fruit that looks like an orange+/Dictionary;component/Resources/Images/orange.jpg
+apple+fruit+the round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh.+/Dictionary;component/Resources/Images/apple.jpg

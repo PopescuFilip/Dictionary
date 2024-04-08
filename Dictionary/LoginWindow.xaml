@@ -1,0 +1,18 @@
+﻿<Window x:Class="Dictionary.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dictionary"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="800">
+    <Grid Height="434" VerticalAlignment="Bottom">
+        <Label Content="Login" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="117" Width="158" Margin="0,35,0,0" FontSize="36"/>
+        <TextBox Name="tbUsername" HorizontalAlignment="Left" Margin="390,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox Name="tbPassword" HorizontalAlignment="Left" Margin="390,197,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="321,165,0,0" VerticalAlignment="Top" Height="29"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="321,191,0,0" VerticalAlignment="Top" Height="29" RenderTransformOrigin="0.202,2.655"/>
+        <Button Name="btnLogin" Content="Login" HorizontalAlignment="Center" Margin="0,244,0,0" VerticalAlignment="Top" Height="35" Width="92" Click="BtnLogin_Click"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="117,49,0,0" VerticalAlignment="Top" Click="Button_Click" Height="25" Width="88"/>
+    </Grid>
+</Window>

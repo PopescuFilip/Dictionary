@@ -1,0 +1,17 @@
+﻿<Window x:Class="Dictionary.WordSearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dictionary"
+        mc:Ignorable="d"
+        Title="WordSearchWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Word:" HorizontalAlignment="Left" Margin="278,113,0,0" VerticalAlignment="Top"/>
+        <Label Content="Category" HorizontalAlignment="Left" Margin="278,144,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbWord" HorizontalAlignment="Center" Margin="0,117,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" IsDropDownOpen="True" ItemsSource="{Binding EntryList.Entries}" IsTextSearchEnabled="False" KeyUp="cbWord_KeyUp" SelectionChanged="CbWord_SelectionChanged"/>
+        <ComboBox Name="cbCategory" HorizontalAlignment="Center" Margin="0,147,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" ItemsSource="{Binding CategoryList.Categories}" IsTextSearchEnabled="False" KeyUp="cbCategory_KeyUp" SelectionChanged="cbCategory_SelectionChanged"/>
+        <Button Content="Search" HorizontalAlignment="Center" Margin="0,231,0,0" VerticalAlignment="Top" Height="28" Width="90" Click="Button_Click"/>
+        <Button Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="117,49,0,0" VerticalAlignment="Top" Height="25" Width="88" Click="btnBack_Click"/>
+    </Grid>
+</Window>

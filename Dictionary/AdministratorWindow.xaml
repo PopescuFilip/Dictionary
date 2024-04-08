@@ -1,0 +1,15 @@
+﻿<Window x:Class="Dictionary.AdministratorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dictionary"
+        mc:Ignorable="d"
+        Title="AdministratorWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Admin Options" HorizontalAlignment="Center" Margin="0,84,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22"/>
+        <Button Name="btnAdd" Content="Add word" HorizontalAlignment="Center" Margin="0,163,0,0" VerticalAlignment="Top" Height="54" Width="156" Click="btnAdd_Click" FontSize="16"/>
+        <Button Name="btnChangeDelete" Content="Change/delete word" HorizontalAlignment="Center" VerticalAlignment="Top" Height="54" Width="157" Margin="0,217,0,0" FontSize="16" Click="btnChangeDelete_Click"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="117,49,0,0" VerticalAlignment="Top" Click="Button_Click" Height="25" Width="88"/>
+    </Grid>
+</Window>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="Dictionary.ViewEntryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dictionary"
+        mc:Ignorable="d"
+        Title="ViewEntryWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Word" HorizontalAlignment="Left" Margin="241,104,0,0" VerticalAlignment="Top" />
+        <Label Content="Category" HorizontalAlignment="Left" Margin="241,135,0,0" VerticalAlignment="Top"/>
+        <Label Content="Description" HorizontalAlignment="Left" Margin="241,166,0,0" VerticalAlignment="Top"/>
+        <Label Content="Image" HorizontalAlignment="Left" Margin="241,247,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="tbWord" HorizontalAlignment="Left" Margin="318,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Focusable="False" Text="{Binding Word}"/>
+        <TextBox Name="tbCategory" HorizontalAlignment="Left" Margin="318,139,0,0" VerticalAlignment="Top" Width="120" Focusable="False" Text="{Binding Category}"/>
+        <TextBox Name="tbDescription" HorizontalAlignment="Left" Margin="318,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Height="65" Focusable="False" Text="{Binding Description}"/>
+        <TextBox Name="tbImage" HorizontalAlignment="Left" Margin="318,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230" Text="{Binding Image}"/>
+        <Image HorizontalAlignment="Left" Margin="599,130,0,0" VerticalAlignment="Top" Width="120" Source="{Binding Image}"/>
+        <Button Name="btnSave" Content="Save Changes" HorizontalAlignment="Left" Margin="433,319,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click"/>
+        <Button Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="318,319,0,0" VerticalAlignment="Top" Width="80" Click="btnDelete_Click"/>
+        <Button Name="btnBack"  Content="Back" HorizontalAlignment="Left" Margin="117,49,0,0" VerticalAlignment="Top" Height="25" Width="88" Click="btnBack_Click"/>
+    </Grid>
+</Window>

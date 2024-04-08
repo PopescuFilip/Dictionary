@@ -1,0 +1,4 @@
+﻿fruit
+mode of transport
+animal
+emotion
